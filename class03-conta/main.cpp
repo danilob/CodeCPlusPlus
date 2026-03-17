@@ -23,9 +23,12 @@ int main() {
     contas->listar();
 
 
-
+    contaDanilo->transferencia(contaMaria, 300);
+    contaDanilo->imprimirSaldo();
+    contaMaria->imprimirSaldo();
 
     delete contaDanilo;
+    delete contaMaria;
 
     return 0;
 }

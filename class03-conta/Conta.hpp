@@ -14,6 +14,7 @@ struct Conta
     void depositar(int valor);
     void retirar(int valor);
     void imprimirSaldo();
+    void transferencia(Conta *destino, int valor);
 };
 
 #endif

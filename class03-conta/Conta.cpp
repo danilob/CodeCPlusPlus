@@ -9,6 +9,8 @@ Conta::Conta(string dono, int saldo_inicial)
     saldo = saldo_inicial;
 }
 
+
+
 void Conta::imprimirSaldo()
 {
     cout << "O saldo da conta de " << nome << " eh: " << saldo << endl;
@@ -30,4 +32,17 @@ void Conta::retirar(int valor)
         return;
     }
     saldo -= valor;
+}
+
+
+void Conta::transferencia(Conta *destino, int valor)
+{
+    cout << "Transferindo " << valor << " da conta de " << nome << " para a conta de " << destino->nome << endl;
+    if (saldo < valor)
+    {
+        cout << "Saldo insuficiente para transferir " << valor << " da conta de " << nome << endl;
+        return;
+    }
+    this->retirar(valor);
+    destino->depositar(valor);
 }
