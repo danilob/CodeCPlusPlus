@@ -15,7 +15,7 @@ public:
     // Construtor padrão
     PassCar(string marca, int ocupantes);
 
-    virtual void display() const override;
+    virtual void display() const;
 
     
 };

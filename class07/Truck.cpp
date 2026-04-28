@@ -6,5 +6,5 @@ Truck::Truck(int eixos, float capacidadeCarga) {
 }
 
 void Truck::display() const {
-    cout << "Caminhão - Eixos: " << eixos << ", Capacidade de Carga: " << capacidadeCarga  << " tonelada(s)" << endl;
+    cout << "Eixos: " << eixos << ", Capacidade de Carga: " << capacidadeCarga  << " tonelada(s)" << endl;
 }

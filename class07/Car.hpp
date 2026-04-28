@@ -11,7 +11,7 @@ class Car {
         // Construtor padrão
         Car();
         virtual ~Car();
-        virtual void display() const;
+        virtual void display() const = 0;
 
     
 };

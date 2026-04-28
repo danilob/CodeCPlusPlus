@@ -6,5 +6,5 @@ PassCar::PassCar(string marca, int ocupantes) {
 }
 
 void PassCar::display() const {
-    cout << "Carro de Passeio - Marca: " << marca << ", Passageiros: " << ocupantes << endl;
+    cout << "Marca: " << marca << ", Passageiros: " << ocupantes << endl;
 }

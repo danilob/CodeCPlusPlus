@@ -30,6 +30,11 @@ void CityCar::insert(int eixos, float capacidadeCarga) {
 void CityCar::display() const {
     cout << "\nQuantidade de Carros (" << qtde << "):\n";
     for (int i = 0; i < qtde; i++) {
+        if(typeid(*frota[i]) == typeid(PassCar)) {
+            cout << "Carro de Passeio: ";
+        } else if(typeid(*frota[i]) == typeid(Truck)) {
+            cout << "Caminhão: ";
+        }
         frota[i]->display();
         cout << "-------------------" << endl;
     }
